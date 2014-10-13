@@ -45,7 +45,7 @@
  */
 
 definition(
-    name: "Average Temperature",
+    name: "AverageThings Temperature",
     namespace: "notoriousbdg",
     author: "Brandon Gordon",
     description: "SmartApp to average the temperature from one or more temperature sensors to a Virtual Temperature Tile.  If a single source sensor is specified, then the virtual tile will mirror the source sensor, which can be useful to create a dedicated tile for a multi-sensor.  A Virtual Temperature Tile must be created from https://github.com/statusbits/smartthings/blob/master/VirtualThings/VirtualTemperatureTile.device.groovy device type to serve as the target Virtual Temperature Tile.",
@@ -73,18 +73,21 @@ def updated() {
 }
 
 def initialize() {
+    subscribe(sensors, "temperature", temperatureHandler)
+}
+
+def temperatureHandler(evt) {
     def sum     = 0
     def count   = 0
     def average = 0
 
-    subscribe(sensors, "temperature", temperatureHandler)
-
-    for (sensor in sensors) {
+    for (sensor in settings.sensors) {
         count += 1
         sum   += sensor.currentTemperature
     }
 
     average = sum/count
+    log.debug "average: $average"
 
     settings.target.parse("temperature: ${average}")
 }

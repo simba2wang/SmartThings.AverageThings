@@ -45,7 +45,7 @@
  */
 
 definition(
-    name: "Average Humidity",
+    name: "AverageThings Humidity",
     namespace: "notoriousbdg",
     author: "Brandon Gordon",
     description: "SmartApp to average the humidity from one or more humidity sensors to a Virtual Humidity Tile.  If a single source sensor is specified, then the virtual tile will mirror the source sensor, which can be useful to create a dedicated tile for a multi-sensor.  A Virtual Humidity Tile must be created from https://github.com/statusbits/smartthings/blob/master/VirtualThings/VirtualHumidityTile.device.groovy device type to serve as the target Virtual Humidity Tile.",
@@ -73,18 +73,21 @@ def updated() {
 }
 
 def initialize() {
+    subscribe(sensors, "humidity", humidityHandler)
+}
+
+def humidityHandler(evt) {
     def sum     = 0
     def count   = 0
     def average = 0
 
-    subscribe(sensors, "humidity", humidityHandler)
-
-    for (sensor in sensors) {
+    for (sensor in settings.sensors) {
         count += 1
         sum   += sensor.currentHumidity
     }
 
     average = sum/count
+    log.debug "average: $average"
 
     settings.target.parse("humidity: ${average}")
 }
