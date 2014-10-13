@@ -10,14 +10,14 @@ The second use case is to calculate the average temperature and humidity for mul
 an external temperature sensor for a thermostat SmartApp or it can be used to calculate the average of multiple outside temperature sensors.
 
 These SmartApps rely on the Virtual Temperature Tile and Virtual Humidity Tile available at 
-https://github.com/statusbits/smartthings/blob/master/VirtualThings/VirtualHumidityTile.device.groovy.
+https://github.com/statusbits/smartthings/tree/master/VirtualThings.
 
 ##Install:
 
 1. Create new SmartApp at https://graph.api.smartthings.com/ide/apps with the entire contents of this file.
-2. Create a new virtual humidity tile device based on https://github.com/statusbits/smartthings/blob/master/VirtualThings/VirtualHumidityTile.device.groovy
+2. Create a new virtual temperature tile or virtual humidity tile device based on https://github.com/statusbits/smartthings/tree/master/VirtualThings
 3. Install the newly created SmartApp in the SmartThings mobile application.
-4. For target virtual humidity tile prompt, select the virtual humidity tile created in step 2.
-5. Select one or more source humidity sensors.
+4. For target virtual tile prompt, select the virtual tile created in step 2.
+5. Select one or more source sensors.
 6. Assign a name.
 7. Tap done.
