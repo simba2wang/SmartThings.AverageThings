@@ -3,7 +3,7 @@
  *  Average Humidity
  *
  *  Author: Brandon Gordon
- *  Code:   https://github.com/notoriousbdg/smartthings/blob/master/AverageHumidity.smartapp.groovy
+ *  Code:   https://github.com/notoriousbdg/SmartThings.AverageThings/blob/master/AverageHumidity.smartapp.groovy
  *  Date:   2014-10-13
  *
  *  Copyright 2014 Brandon Gordon
