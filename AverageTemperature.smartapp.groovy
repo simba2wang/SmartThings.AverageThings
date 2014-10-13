@@ -3,7 +3,7 @@
  *  Average Temperature
  *
  *  Author: Brandon Gordon
- *  Code:   https://github.com/notoriousbdg/smartthings/blob/master/AverageTemperature.smartapp.groovy
+ *  Code:   https://github.com/notoriousbdg/SmartThings.AverageThings/blob/master/AverageTemperature.smartapp.groovy
  *  Date:   2014-10-13
  *
  *  Copyright 2014 Brandon Gordon
