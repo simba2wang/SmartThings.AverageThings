@@ -1,7 +1,7 @@
 # AverageThings SmartApp for SmartThings
 ===========
 
-Copyright (c) 2014 [Brandon Gordon]https://github.com/notoriousbdg
+Copyright (c) 2014 [Brandon Gordon](https://github.com/notoriousbdg)
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
 in compliance with the License. You may obtain a copy of the License at:
