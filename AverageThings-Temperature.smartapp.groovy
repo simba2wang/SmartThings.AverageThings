@@ -49,7 +49,7 @@ definition(
     namespace: "notoriousbdg",
     author: "Brandon Gordon",
     description: "SmartApp to average the temperature from one or more temperature sensors to a Virtual Temperature Tile.  If a single source sensor is specified, then the virtual tile will mirror the source sensor, which can be useful to create a dedicated tile for a multi-sensor.  A Virtual Temperature Tile must be created from https://github.com/statusbits/smartthings/blob/master/VirtualThings/VirtualTemperatureTile.device.groovy device type to serve as the target Virtual Temperature Tile.",
-    category: "My Apps",
+    category: "Green Living",
     iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
     iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png")
 

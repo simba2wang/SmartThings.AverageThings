@@ -49,7 +49,7 @@ definition(
     namespace: "notoriousbdg",
     author: "Brandon Gordon",
     description: "SmartApp to average the humidity from one or more humidity sensors to a Virtual Humidity Tile.  If a single source sensor is specified, then the virtual tile will mirror the source sensor, which can be useful to create a dedicated tile for a multi-sensor.  A Virtual Humidity Tile must be created from https://github.com/statusbits/smartthings/blob/master/VirtualThings/VirtualHumidityTile.device.groovy device type to serve as the target Virtual Humidity Tile.",
-    category: "My Apps",
+    category: "Green Living",
     iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
     iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png")
 
